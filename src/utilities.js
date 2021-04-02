@@ -1,5 +1,5 @@
 const fingerJoints = {
-    // zero representing the base, then immidietly followed by the points on that finger 
+    // zero representing the base, then immediatly followed by the points on that finger 
     thumb: [0,1,2,3,4],
     indexFinger: [0,5,6,7,8],
     middleFinger: [0,9,10,11,12],
@@ -48,9 +48,11 @@ export const drawHand = (predictions, ctx) => {
             for(let i = 0; i < landmarks.length; i++) {
                 //get x point
                 const x = landmarks[i][0]
+             
                 // get y point
                 const y = landmarks[i][1]
-
+                console.log("[ ",x,", ",y,"]");
+                //550.1053720900509 ,  398.11964536855197  --> thumbs up
                 //get z ?
 
                 // start drawing
